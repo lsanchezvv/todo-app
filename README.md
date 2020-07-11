@@ -9,3 +9,7 @@ Run `yarn install`
 ## Starting the application
 
 Run `yarn start`
+
+## See the app running
+
+Visit https://todo-app.luisanz.com/
