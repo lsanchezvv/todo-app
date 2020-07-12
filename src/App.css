@@ -2,6 +2,16 @@
   background: rgb(7, 132, 170);
   padding: 30px;
   height: 100vh;
+  position: flex-box;
+}
+
+.app-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3px 10px;
+  margin: 6px;
+  padding: 3px 10px;
 }
 
 .todo-list {
