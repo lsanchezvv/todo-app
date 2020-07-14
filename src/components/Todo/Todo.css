@@ -1,4 +1,5 @@
 .todo-action > * {
   margin: 3px;
   color: gray;
+  font-size: 2em;
 }
