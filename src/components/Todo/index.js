@@ -1,5 +1,9 @@
 import React from 'react'
-import { Button } from '@material-ui/core'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCheck, faTimes } from '@fortawesome/free-solid-svg-icons'
+import './Todo.css'
+
+
 
 function Todo ({ todo, index, completeTodo, removeTodo }) {
   return (
@@ -7,9 +11,9 @@ function Todo ({ todo, index, completeTodo, removeTodo }) {
       style={{ textDecoration: todo.isCompleted ? 'line-through' : '' }}
       className="todo">
       {todo.text}
-      <div>
-        <Button color="primary" variant="outlined" onClick={() => completeTodo(index)}>Complete</Button>
-        <Button color="primary" variant="outlined" onClick={() => removeTodo(index)}>x</Button>
+      <div className="todo-action">
+        <FontAwesomeIcon title="Mark as complete" size="2x" onClick={() => completeTodo(index)} icon={faCheck}></FontAwesomeIcon>
+        <FontAwesomeIcon title="Remove todo" size="2x" onClick={() => removeTodo(index)} icon={faTimes}></FontAwesomeIcon>
       </div>
     </div>
   )
