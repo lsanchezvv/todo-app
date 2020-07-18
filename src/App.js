@@ -41,10 +41,10 @@ function App () {
     <div className="app">
       <h1 className="app-header">Todo list app</h1>
       <div className="todo-list">
+        <TodoForm addTodo={addTodo} />
         {todos.map((todo, index) => (
           <Todo key={index} index={index} todo={todo} completeTodo={completeTodo} removeTodo={removeTodo} />
         ))}
-        <TodoForm addTodo={addTodo} />
       </div>
     </div>
   )
