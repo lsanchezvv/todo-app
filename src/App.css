@@ -1,5 +1,5 @@
 .app {
-  background: rgb(7, 132, 170);
+  background: #eee;
   padding: 30px;
   height: 100vh;
   position: flex-box;
@@ -33,7 +33,7 @@
   justify-content: space-between;
 }
 
-.input {
+.new-todo {
   width: 100%;
   box-sizing: border-box;
   border: 0;
