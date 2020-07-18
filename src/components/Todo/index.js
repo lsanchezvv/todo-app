@@ -14,7 +14,7 @@ function Todo ({ todo, index, completeTodo, removeTodo }) {
           <i title="Mark as complete" size="2x" class="fas fa-check"></i>
         </span>
         <span onClick={() => removeTodo(index)} className="todo-icons">
-          <i title="Mark as complete" size="2x" class="fas fa-times"></i>
+          <i title="Remove" size="2x" class="fas fa-times"></i>
         </span>
       </div>
     </div>
