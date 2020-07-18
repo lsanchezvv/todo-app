@@ -1,0 +1,11 @@
+.new-todo {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid rgb(228, 224, 224);
+}
+
+.new-todo:focus {
+  outline: none;
+  border-bottom: 1px solid black;
+}

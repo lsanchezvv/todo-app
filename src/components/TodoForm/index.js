@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-
+import './Todo.css'
 function TodoForm ({ addTodo }) {
   const [value, setValue] = useState('')
 
@@ -14,7 +14,8 @@ function TodoForm ({ addTodo }) {
     <form onSubmit={handleSubmit}>
       <input
         type="text"
-        className="input"
+        className="new-todo"
+        autoFocus
         value={value}
         placeholder="Add Todo..."
         onChange={e => setValue(e.target.value)} />
